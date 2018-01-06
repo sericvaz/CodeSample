@@ -6,9 +6,18 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
+/**
+ * Utility class to maintain logging across the application.
+ * This can be extended to redirect the logs to an external file/db etc.
+ * TODO: Format of log statements to be fine tuned.
+ *  
+ * @author sharon
+ *
+ */
 public class MessageAppLogger {
 	
-	/**
+	/** Gets the logger for the given class, sets the log level with the handler.
+	 * 
 	 * @param className
 	 * @return
 	 */
@@ -21,6 +30,8 @@ public class MessageAppLogger {
 	}
 
 	/**
+	 * Added ConsoleHandler to the Logger and setup a custom formatter.
+	 * 
 	 * @param logger
 	 */
 	private static void addHandlerToLogger(Logger logger) {
@@ -31,6 +42,8 @@ public class MessageAppLogger {
 	}
 	
 	/**
+	 * Custom formatter class to format the logs messages.
+	 * 
 	 * @author sharon
 	 *
 	 */
