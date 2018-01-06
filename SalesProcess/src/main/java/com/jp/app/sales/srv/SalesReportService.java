@@ -16,7 +16,7 @@ public interface SalesReportService {
 	 * 
 	 * @param saleStore
 	 */
-	void publisSalesReport(SalesStore saleStore);
+	void publishSalesReport(SalesStore saleStore);
 
 	/**
 	 * Publishes the price adjustments reports for each item type recorded in

@@ -21,7 +21,7 @@ public class SalesReportServiceImpl implements SalesReportService {
 	 * @see com.jp.app.sales.srv.SalesReportService#publishItemSaleReport(com.jp.app.sales.dto.SalesStore)
 	 */
 	@Override
-	public void publisSalesReport(SalesStore saleStore) {
+	public void publishSalesReport(SalesStore saleStore) {
 		logger.log(Level.FINE, "\n===================================\n");
 		saleStore.getSaleItemCache().forEach((k, v) -> printSalesReportForItemType(k, v, saleStore));
 		logger.log(Level.FINE, "\n===================================\n");

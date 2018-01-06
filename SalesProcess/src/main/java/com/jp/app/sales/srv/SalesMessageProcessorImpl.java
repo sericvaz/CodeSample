@@ -65,12 +65,13 @@ public class SalesMessageProcessorImpl implements SalesMessageProcessor {
 		salesRequestProcessingService.processRequest(salesRequest, salesStore);
 
 		if ((saleMessageCounter % SALE_SUMMARY_THRESHOLD) == 0) {
-			salesReportService.publisSalesReport(salesStore);
+			salesReportService.publishSalesReport(salesStore);
 		}
 
 		if ((saleMessageCounter % SALE_ADJUSTMENT_THRESHOLD) == 0) {
 			logger.log(Level.FINE, "\n.............Processing paused to generate adjustment report.....\n");
 			salesReportService.publishPriceAdjustmentReport(salesStore);
+			logger.log(Level.FINE, "\n.............Resuming message consumption and processing.....\n");
 		}
 	}
 

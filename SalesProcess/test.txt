@@ -29,7 +29,7 @@ onion at 10p
 Multiple 2p onions
 egg at 10p
 52 sales of eggs at 10p each
-Subtract 5p eggs
+Add 5p eggs
 apple at 33p
 9 sales of apples at 27p each
 5 sales of eggs at 10p each
@@ -40,7 +40,7 @@ cherry at 10p
 Multiple 2p cherries
 egg at 10p
 52 sales of eggs at 10p each
-Subtract 5p eggs
+Add 5p eggs
 apple at 33p
 9 sales of candies at 7p each
 5 sales of candies at 15p each
@@ -50,7 +50,7 @@ apple at 10p
 Add 20p apples
 egg at 10p
 52 sales of eggs at 10p each
-Subtract 5p eggs
+Add 5p eggs
 apple at 33p
 9 sales of apples at 27p each
 5 sales of eggs at 10p each
@@ -59,7 +59,6 @@ orange at 12p
 20 sales of oranges at 10p each
 chip at 10p
 52 sales of chips at 10p each
-Subtract 5p chips
 orange at 33p
 9 sales of oranges at 27p each
 44 sales of chips at 10p each
@@ -86,7 +85,6 @@ cherry at 10p
 Multiple 2p cherries
 egg at 10p
 52 sales of eggs at 10p each
-Subtract 5p eggs
 apple at 33p
 9 sales of candies at 7p each
 5 sales of candies at 15p each
@@ -119,10 +117,8 @@ rrrrrrrrrrrrrrrrrrrrrrrrrr
 20 of oranges at 10p each sales
 onion at 10p
 20 sales of onions at 10p each
-Multiple 2p onions
 egg at 10p
 52 sales of eggs at 10p each
-Subtract 5p eggs
 apple at 33p
 9 sales of apples at 27p each
 5 sales of eggs at 10p each
@@ -133,7 +129,6 @@ cherry at 10p
 Multiple 2p cherries
 egg at 10p
 52 sales of eggs at 10p each
-Subtract 5p eggs
 apple at 33p
 9 sales of candies at 7p each
 5 sales of candies at 15p each

@@ -1,0 +1,391 @@
+Message 1: apple at 10p 
+Message 2: 20 sales of apples at 10p each 
+Message 3: Add 20p apples 
+Message 4: egg at 10p 
+Message 5: 52 sales of eggs at 10p each 
+Message 6: Subtract 5p eggs 
+Message 7: apple at 33p 
+Message 8: 9 sales of apples at 27p each 
+Message 9: 5 sales of eggs at 10p each 
+Message 10: 5 sales of eggs at 15p each 
+
+===================================
+Type:apple ItemCount:31  Total Price:906.000000 
+Type:egg ItemCount:63  Total Price:390.000000 
+
+===================================
+Message 11: orange at 12p 
+Message 12: 20 sales of oranges at 10p each 
+Message 13: Add 20p oranges 
+Message 14: chip at 10p 
+Message 15: 52 sales of chips at 10p each 
+Message 16: Subtract 5p chips 
+Message 17: orange at 33p 
+Message 18: 9 sales of oranges at 27p each 
+Message 19: 44 sales of chips at 10p each 
+Message 20: 2 sales of chips at 15p each 
+
+===================================
+Type:orange ItemCount:31  Total Price:908.000000 
+Type:apple ItemCount:31  Total Price:906.000000 
+Type:chip ItemCount:99  Total Price:735.000000 
+Type:egg ItemCount:63  Total Price:390.000000 
+
+===================================
+Message 21: apple at 10p 
+Message 22: 20 sales of apples at 10p each 
+Message 23: Add 20p apples 
+Message 24: rrrrrrrrrrrrrrrrrrrrrrrrrr 
+
+Message not parsed:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Error Details:Unable to process input message, format not supported:rrrrrrrrrrrrrrrrrrrrrrrrrrJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Error Details:Unable to process input message, format not supported:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Message 25:  
+
+Message not parsed:
+Error Details:Empty input message...Jan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:
+Error Details:Empty input message...
+Message 26: 20 of oranges at 10p each sales 
+
+Message not parsed:20 of oranges at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of oranges at 10p each salesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:20 of oranges at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of oranges at 10p each sales
+Message 27: onion at 10p 
+Message 28: 20 sales of onions at 10p each 
+Message 29: Multiple 2p onions 
+
+Message not parsed:Multiple 2p onions
+Error Details:Unable to process input message, format not supported:Multiple 2p onionsJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:Multiple 2p onions
+Error Details:Unable to process input message, format not supported:Multiple 2p onions
+Message 30: egg at 10p 
+
+===================================
+Type:orange ItemCount:31  Total Price:908.000000 
+Type:apple ItemCount:52  Total Price:2156.000000 
+Type:chip ItemCount:99  Total Price:735.000000 
+Type:egg ItemCount:64  Total Price:400.000000 
+Type:onion ItemCount:21  Total Price:210.000000 
+
+===================================
+Message 31: 52 sales of eggs at 10p each 
+Message 32: Add 5p eggs 
+Message 33: apple at 33p 
+Message 34: 9 sales of apples at 27p each 
+Message 35: 5 sales of eggs at 10p each 
+Message 36: 5 sales of eggs at 15p each 
+Message 37: 20 of cherries at 10p each sales 
+
+Message not parsed:20 of cherries at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of cherries at 10p each salesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:20 of cherries at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of cherries at 10p each sales
+Message 38: cherry at 10p 
+Message 39: 20 sales of cherries at 10p each 
+Message 40: Multiple 2p cherries 
+
+Message not parsed:Multiple 2p cherries
+Error Details:Unable to process input message, format not supported:Multiple 2p cherriesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:Multiple 2p cherries
+Error Details:Unable to process input message, format not supported:Multiple 2p cherries
+Message 41: egg at 10p 
+Message 42: 52 sales of eggs at 10p each 
+Message 43: Add 5p eggs 
+Message 44: apple at 33p 
+Message 45: 9 sales of candies at 7p each 
+Message 46: 5 sales of candies at 15p each 
+Message 47: candy at 3p 
+Message 48: apple at 10p 
+Message 49: 20 sales of apples at 10p each 
+Message 50: Add 20p apples 
+
+===================================
+Type:orange ItemCount:31  Total Price:908.000000 
+Type:apple ItemCount:84  Total Price:4355.000000 
+Type:cherry ItemCount:21  Total Price:210.000000 
+Type:chip ItemCount:99  Total Price:735.000000 
+Type:egg ItemCount:179  Total Price:3050.000000 
+Type:candy ItemCount:15  Total Price:141.000000 
+Type:onion ItemCount:21  Total Price:210.000000 
+
+===================================
+
+.............Processing paused to generate adjustment report.....
+
+==== Adjustment Report ============
+
+Type:orange Adjustments done:
+Value changed by 20.000000  after operation performed to 'ADD'
+
+Type:apple Adjustments done:
+Value changed by 20.000000  after operation performed to 'ADD'
+Value changed by 20.000000  after operation performed to 'ADD'
+Value changed by 20.000000  after operation performed to 'ADD'
+
+Type:chip Adjustments done:
+Value changed by 5.000000  after operation performed to 'SUBTRACT'
+
+Type:egg Adjustments done:
+Value changed by 5.000000  after operation performed to 'SUBTRACT'
+Value changed by 5.000000  after operation performed to 'ADD'
+Value changed by 5.000000  after operation performed to 'ADD'
+===================================
+
+.............Resuming message consumption and processing.....
+Message 51: egg at 10p 
+Message 52: 52 sales of eggs at 10p each 
+Message 53: Add 5p eggs 
+Message 54: apple at 33p 
+Message 55: 9 sales of apples at 27p each 
+Message 56: 5 sales of eggs at 10p each 
+Message 57: 5 sales of eggs at 15p each 
+Message 58: orange at 12p 
+Message 59: 20 sales of oranges at 10p each 
+Message 60: chip at 10p 
+
+===================================
+Type:orange ItemCount:52  Total Price:1120.000000 
+Type:apple ItemCount:94  Total Price:4631.000000 
+Type:cherry ItemCount:21  Total Price:210.000000 
+Type:chip ItemCount:100  Total Price:745.000000 
+Type:egg ItemCount:242  Total Price:4865.000000 
+Type:candy ItemCount:15  Total Price:141.000000 
+Type:onion ItemCount:21  Total Price:210.000000 
+
+===================================
+Message 61: 52 sales of chips at 10p each 
+Message 62: orange at 33p 
+Message 63: 9 sales of oranges at 27p each 
+Message 64: 44 sales of chips at 10p each 
+Message 65: 2 sales of chips at 15p each 
+Message 66: apple at 10p 
+Message 67: 20 sales of apples at 10p each 
+Message 68: Add 20p apples 
+Message 69: rrrrrrrrrrrrrrrrrrrrrrrrrr 
+
+Message not parsed:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Error Details:Unable to process input message, format not supported:rrrrrrrrrrrrrrrrrrrrrrrrrrJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Error Details:Unable to process input message, format not supported:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Message 70:  
+
+Message not parsed:
+Error Details:Empty input message...Jan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:
+Error Details:Empty input message...
+Message 71: 20 of oranges at 10p each sales 
+
+Message not parsed:20 of oranges at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of oranges at 10p each salesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:20 of oranges at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of oranges at 10p each sales
+Message 72: onion at 10p 
+Message 73: 20 sales of onions at 10p each 
+Message 74: Multiple 2p onions 
+
+Message not parsed:Multiple 2p onions
+Error Details:Unable to process input message, format not supported:Multiple 2p onionsJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:Multiple 2p onions
+Error Details:Unable to process input message, format not supported:Multiple 2p onions
+Message 75: egg at 10p 
+Message 76: 52 sales of eggs at 10p each 
+Message 77: Subtract 5p eggs 
+Message 78: apple at 33p 
+Message 79: 9 sales of apples at 27p each 
+Message 80: 5 sales of eggs at 10p each 
+
+===================================
+Type:orange ItemCount:62  Total Price:1396.000000 
+Type:apple ItemCount:125  Total Price:7417.000000 
+Type:cherry ItemCount:21  Total Price:210.000000 
+Type:chip ItemCount:198  Total Price:1735.000000 
+Type:egg ItemCount:300  Total Price:3970.000000 
+Type:candy ItemCount:15  Total Price:141.000000 
+Type:onion ItemCount:42  Total Price:420.000000 
+
+===================================
+Message 81: 5 sales of eggs at 15p each 
+Message 82: 20 of cherries at 10p each sales 
+
+Message not parsed:20 of cherries at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of cherries at 10p each salesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:20 of cherries at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of cherries at 10p each sales
+Message 83: cherry at 10p 
+Message 84: 20 sales of cherries at 10p each 
+Message 85: Multiple 2p cherries 
+
+Message not parsed:Multiple 2p cherries
+Error Details:Unable to process input message, format not supported:Multiple 2p cherriesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:Multiple 2p cherries
+Error Details:Unable to process input message, format not supported:Multiple 2p cherries
+Message 86: egg at 10p 
+Message 87: 52 sales of eggs at 10p each 
+Message 88: apple at 33p 
+Message 89: 9 sales of candies at 7p each 
+Message 90: 5 sales of candies at 15p each 
+
+===================================
+Type:orange ItemCount:62  Total Price:1396.000000 
+Type:apple ItemCount:126  Total Price:7450.000000 
+Type:cherry ItemCount:42  Total Price:420.000000 
+Type:chip ItemCount:198  Total Price:1735.000000 
+Type:egg ItemCount:358  Total Price:4575.000000 
+Type:candy ItemCount:29  Total Price:279.000000 
+Type:onion ItemCount:42  Total Price:420.000000 
+
+===================================
+Message 91: candy at 3p 
+Message 92: apple at 10p 
+Message 93: 20 sales of apples at 10p each 
+Message 94: Add 20p apples 
+Message 95: egg at 10p 
+Message 96: 52 sales of eggs at 10p each 
+Message 97: Subtract 5p eggs 
+Message 98: apple at 33p 
+Message 99: 9 sales of apples at 27p each 
+Message 100: 5 sales of eggs at 10p each 
+
+===================================
+Type:orange ItemCount:62  Total Price:1396.000000 
+Type:apple ItemCount:157  Total Price:10876.000000 
+Type:cherry ItemCount:42  Total Price:420.000000 
+Type:chip ItemCount:198  Total Price:1735.000000 
+Type:egg ItemCount:416  Total Price:3100.000000 
+Type:candy ItemCount:30  Total Price:282.000000 
+Type:onion ItemCount:42  Total Price:420.000000 
+
+===================================
+
+.............Processing paused to generate adjustment report.....
+
+==== Adjustment Report ============
+
+Type:orange Adjustments done:
+
+Type:apple Adjustments done:
+Value changed by 20.000000  after operation performed to 'ADD'
+Value changed by 20.000000  after operation performed to 'ADD'
+
+Type:chip Adjustments done:
+
+Type:egg Adjustments done:
+Value changed by 5.000000  after operation performed to 'ADD'
+Value changed by 5.000000  after operation performed to 'SUBTRACT'
+Value changed by 5.000000  after operation performed to 'SUBTRACT'
+===================================
+
+.............Resuming message consumption and processing.....
+Message 101: 5 sales of eggs at 15p each 
+Message 102: orange at 12p 
+Message 103: 20 sales of oranges at 10p each 
+Message 104: Add 20p oranges 
+Message 105: chip at 10p 
+Message 106: 52 sales of chips at 10p each 
+Message 107: Subtract 5p chips 
+Message 108: orange at 33p 
+Message 109: 9 sales of oranges at 27p each 
+Message 110: 44 sales of chips at 10p each 
+
+===================================
+Type:orange ItemCount:93  Total Price:3544.000000 
+Type:apple ItemCount:157  Total Price:10876.000000 
+Type:cherry ItemCount:42  Total Price:420.000000 
+Type:chip ItemCount:295  Total Price:1450.000000 
+Type:egg ItemCount:421  Total Price:3175.000000 
+Type:candy ItemCount:30  Total Price:282.000000 
+Type:onion ItemCount:42  Total Price:420.000000 
+
+===================================
+Message 111: 2 sales of chips at 15p each 
+Message 112: apple at 10p 
+Message 113: 20 sales of apples at 10p each 
+Message 114: Add 20p apples 
+Message 115: rrrrrrrrrrrrrrrrrrrrrrrrrr 
+
+Message not parsed:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Error Details:Unable to process input message, format not supported:rrrrrrrrrrrrrrrrrrrrrrrrrrJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Error Details:Unable to process input message, format not supported:rrrrrrrrrrrrrrrrrrrrrrrrrr
+Message 116:  
+
+Message not parsed:
+Error Details:Empty input message...Jan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:
+Error Details:Empty input message...
+Message 117: 20 of oranges at 10p each sales 
+
+Message not parsed:20 of oranges at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of oranges at 10p each salesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:20 of oranges at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of oranges at 10p each sales
+Message 118: onion at 10p 
+Message 119: 20 sales of onions at 10p each 
+Message 120: egg at 10p 
+
+===================================
+Type:orange ItemCount:93  Total Price:3544.000000 
+Type:apple ItemCount:178  Total Price:14646.000000 
+Type:cherry ItemCount:42  Total Price:420.000000 
+Type:chip ItemCount:297  Total Price:1480.000000 
+Type:egg ItemCount:422  Total Price:3185.000000 
+Type:candy ItemCount:30  Total Price:282.000000 
+Type:onion ItemCount:63  Total Price:630.000000 
+
+===================================
+Message 121: 52 sales of eggs at 10p each 
+Message 122: apple at 33p 
+Message 123: 9 sales of apples at 27p each 
+Message 124: 5 sales of eggs at 10p each 
+Message 125: 5 sales of eggs at 15p each 
+Message 126: 20 of cherries at 10p each sales 
+
+Message not parsed:20 of cherries at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of cherries at 10p each salesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:20 of cherries at 10p each sales
+Error Details:Unable to process input message, format not supported:20 of cherries at 10p each sales
+Message 127: cherry at 10p 
+Message 128: 20 sales of cherries at 10p each 
+Message 129: Multiple 2p cherries 
+
+Message not parsed:Multiple 2p cherries
+Error Details:Unable to process input message, format not supported:Multiple 2p cherriesJan 06, 2018 11:05:20 PM com.jp.app.TestMain lambda$0
+SEVERE: 
+Message not parsed:Multiple 2p cherries
+Error Details:Unable to process input message, format not supported:Multiple 2p cherries
+Message 130: egg at 10p 
+
+===================================
+Type:orange ItemCount:93  Total Price:3544.000000 
+Type:apple ItemCount:188  Total Price:14922.000000 
+Type:cherry ItemCount:63  Total Price:630.000000 
+Type:chip ItemCount:297  Total Price:1480.000000 
+Type:egg ItemCount:485  Total Price:3840.000000 
+Type:candy ItemCount:30  Total Price:282.000000 
+Type:onion ItemCount:63  Total Price:630.000000 
+
+===================================
+Message 131: 52 sales of eggs at 10p each 
+Message 132: apple at 33p 
+Message 133: 9 sales of candies at 7p each 
+Message 134: 5 sales of candies at 15p each 
+Message 135: candy at 3p 
