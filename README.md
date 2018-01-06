@@ -10,7 +10,7 @@
 <li> After every 50 messages, SalesReportService is called to publish a report of all adjustments carried out.</li>
 </ol>
 <h4>Libraries/dependencies: </h4><ul>
-<li>Apache Lucene: lucene-analyzers Version: 3.6.2 (Added to convert the plural form of a word to its singluar form. Used in class MessageParserImpl-> MessageParserUtil.</li>
+<li>Apache Lucene: lucene-analyzers Version: 3.6.2 (Added to convert the plural form of a word to its singluar form. Used in class MessageParserImpl-> MessageParserUtil).</li>
 <li>	Java: 1.8</li>
 <li>Maven </li>
 </ul>
