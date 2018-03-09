@@ -24,8 +24,8 @@ public class AddNewSaleItemServiceImpl implements RequestProcessingService<NewSa
 	public void processRequest(NewSaleRequest addNewItemRequest, SalesStore saleInventory) {
 
 		for (int i = 0; i < addNewItemRequest.getQuantity(); i++) {
-			SalesItem saleItem = new SalesItem(addNewItemRequest.getItemType(), addNewItemRequest.getPrice());
-			saleInventory.addItemToInventory(saleItem);
+			saleInventory
+					.addItemToInventory(new SalesItem(addNewItemRequest.getItemType(), addNewItemRequest.getPrice()));
 		}
 	}
 

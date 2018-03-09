@@ -7,7 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Holder class to store the items successfully processed and record adjustments.
+ * Holder class to store the items successfully processed and record
+ * adjustments.
  * 
  * @author sharon
  *
@@ -35,56 +36,34 @@ public class SalesStore {
 	}
 
 	public List<SalesItem> getItemsFromInventoryByType(String itemType) {
-		if (saleItemCache.containsKey(itemType)) {
-			return saleItemCache.get(itemType);
-		}
-		return Collections.emptyList();
+		return saleItemCache.getOrDefault(itemType, Collections.emptyList());
 	}
 
 	public List<AdjustPriceRequest> getItemsFromAdjustmentLogByType(String itemType) {
-		if (itemAdjustmentCache.containsKey(itemType)) {
-			return itemAdjustmentCache.get(itemType);
-		}
-		return Collections.emptyList();
+
+		return itemAdjustmentCache.getOrDefault(itemType, Collections.emptyList());
 	}
 
 	public int getItemsCountByType(String itemType) {
-		if (saleItemCache.containsKey(itemType)) {
-			return saleItemCache.get(itemType).size();
-		}
-		return 0;
+		return saleItemCache.getOrDefault(itemType, Collections.emptyList()).size();
 	}
 
 	public double getItemsTotalPriceByType(String itemType) {
-		if (saleItemCache.containsKey(itemType)) {
-			return saleItemCache.get(itemType).stream().mapToDouble(saleItem -> saleItem.getPrice()).sum();
-		}
-		return 0;
+
+		return saleItemCache.getOrDefault(itemType, Collections.emptyList()).stream()
+				.mapToDouble(saleItem -> saleItem.getPrice()).sum();
 	}
 
 	public void addToAdjustmentLog(AdjustPriceRequest adjustPriceRequest) {
 
-		List<AdjustPriceRequest> adjustPriceRequestList = null;
-		if (itemAdjustmentCache.containsKey(adjustPriceRequest.getItemType())) {
-			adjustPriceRequestList = itemAdjustmentCache.get(adjustPriceRequest.getItemType());
-		} else {
-			adjustPriceRequestList = new ArrayList<>();
-		}
-		adjustPriceRequestList.add(adjustPriceRequest);
-		itemAdjustmentCache.put(adjustPriceRequest.getItemType(), adjustPriceRequestList);
+		itemAdjustmentCache.putIfAbsent(adjustPriceRequest.getItemType(), new ArrayList<>());
+		itemAdjustmentCache.get(adjustPriceRequest.getItemType()).add(adjustPriceRequest);
 
 	}
 
 	public void addItemToInventory(SalesItem saleItem) {
-
-		List<SalesItem> storedSaleItems = null;
-		if (saleItemCache.containsKey(saleItem.getType())) {
-			storedSaleItems = saleItemCache.get(saleItem.getType());
-		} else {
-			storedSaleItems = new ArrayList<>();
-		}
-		storedSaleItems.add(saleItem);
-		saleItemCache.put(saleItem.getType(), storedSaleItems);
+		saleItemCache.putIfAbsent(saleItem.getType(), new ArrayList<>());
+		saleItemCache.get(saleItem.getType()).add(saleItem);
 	}
 
 }

@@ -3,6 +3,7 @@ package com.jp.app.sales.srv;
 import java.util.List;
 
 import com.jp.app.sales.dto.AdjustPriceRequest;
+import com.jp.app.sales.dto.AdjustmentOperator;
 import com.jp.app.sales.dto.SalesItem;
 import com.jp.app.sales.dto.SalesStore;
 
@@ -28,37 +29,10 @@ public class PriceAdjustmentServiceImpl implements RequestProcessingService<Adju
 		List<SalesItem> saleItems = saleInventory.getItemsFromInventoryByType(adjustPriceRequest.getItemType());
 
 		saleItems.forEach(saleItem -> {
-			saleItem.setPrice(getAdjustedPrice(saleItem.getPrice(), adjustPriceRequest));
+			AdjustmentOperator operator = adjustPriceRequest.getAdjustmentOperator();
+			saleItem.setPrice(operator.calculatePrice(saleItem.getPrice(), adjustPriceRequest.getPriceValueToAdjust()));
 		});
 
 		saleInventory.addToAdjustmentLog(adjustPriceRequest);
 	}
-
-	/**
-	 * Gets the adjusted price based on the adjustment operation to be
-	 * performed.
-	 * 
-	 * @param currentItemPrice
-	 * @param adjustPriceRequest
-	 * @return
-	 */
-	private double getAdjustedPrice(double currentItemPrice, AdjustPriceRequest adjustPriceRequest) {
-
-		double adjustedPrice = 0;
-		switch (adjustPriceRequest.getAdjustmentOperator()) {
-		case ADD:
-			adjustedPrice = currentItemPrice + adjustPriceRequest.getPriceValueToAdjust();
-			break;
-		case SUBTRACT:
-			adjustedPrice = currentItemPrice - adjustPriceRequest.getPriceValueToAdjust();
-			break;
-		case MULTIPLY:
-			adjustedPrice = currentItemPrice * adjustPriceRequest.getPriceValueToAdjust();
-			break;
-		default:
-			throw new UnsupportedOperationException("Adjustment Operator not supported");
-		}
-		return adjustedPrice;
-	}
-
 }
